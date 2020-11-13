@@ -1,0 +1,121 @@
+(base) C:\Users\kimgr\Documents\Python Scripts\project2final>python project2.py
+---------------------
+Running main function
+---------------------
+
+
+
+Starting Project 2: part a
+
+
+Checking if my code works correctly:
+My MSE is:  0.0020413214826653725
+My R2 score is:  0.9728704511829854
+
+Testing against sklearn OLS:
+MSE after scaling: 0.0020
+R2 score after scaling 0.9729
+
+
+
+Checking to see if my GradientDescent code works correctly:
+My MSE is:  0.009290414640498248
+My R2 score is:  0.8765286312518465
+
+Trying the same with Stochastic Gradient Descent:
+
+Method completed is:  OLS  regression
+Number of epochs completed:  10000
+My R2 score is:  0.8887131130175442
+
+Method completed is:  Ridge  regression
+Number of epochs completed:  10000
+My R2 score is:  0.8825795447435163
+
+##### Printing data to files: #####
+Starting printer to generate data:
+
+Printing and calculating results for a:
+
+R2 score for printer:  0.9336347357474689
+
+
+
+Starting Project 2: part b and c
+
+
+
+Training Neural Network for Regression
+
+Chosen activation function is:  sigmoid
+Values calculated for test data:
+The NeuralNetwork MSE score is:  0.0070834610796439105
+The NeuralNetwork R2 score is:  0.9058594617332385
+
+Values calculated for training data:
+The NeuralNetwork MSE score is:  0.008795952222015936
+The NeuralNetwork R2 score is:  0.8965626005920975
+
+Training Neural Network for Regression
+
+Chosen activation function is:  RELU
+Values calculated for test data:
+The NeuralNetwork MSE score is:  0.002942375891606443
+The NeuralNetwork R2 score is:  0.9608952675670102
+
+Values calculated for training data:
+The NeuralNetwork MSE score is:  0.002097606226895497
+The NeuralNetwork R2 score is:  0.9753328658892868
+
+Training Neural Network for Regression
+
+Chosen activation function is:  LeakyRELU
+Values calculated for test data:
+The NeuralNetwork MSE score is:  0.0029847470800230015
+The NeuralNetwork R2 score is:  0.9603321464543665
+
+Values calculated for training data:
+The NeuralNetwork MSE score is:  0.0019224314569332283
+The NeuralNetwork R2 score is:  0.9773928614633216
+
+
+
+Starting Project 2: part d
+
+
+inputs = (n_inputs, pixel_width, pixel_height) = (1797, 8, 8)
+labels = (n_inputs) = (1797,)
+Accuracy score on training set:  0.9909533750869868
+Accuracy score on test set:  0.9222222222222223
+C:\Users\kimgr\Documents\Python Scripts\project2final\NewNeural.py:37: RuntimeWarning: overflow encountered in exp
+  return 1/(1 + np.exp(-x))
+C:\Users\kimgr\Documents\Python Scripts\project2final\NewNeural.py:79: RuntimeWarning: overflow encountered in exp
+  exp_term = np.exp(self.z_o)
+C:\Users\kimgr\Documents\Python Scripts\project2final\NewNeural.py:80: RuntimeWarning: invalid value encountered in true_divide
+  self.probabilities = exp_term / np.sum(exp_term, axis=1, keepdims=True)
+C:\Users\kimgr\Documents\Python Scripts\project2final\NewNeural.py:37: RuntimeWarning: overflow encountered in exp
+  return 1/(1 + np.exp(-x))
+
+
+
+Starting Project 2: part e
+
+
+Logistic regression using image data
+
+Using Scikit-Learn:
+Accuracy of training data:  1.0
+Accuracy of test data:  0.9583333333333334
+C:\Users\kimgr\Documents\Python Scripts\project2final\functions.py:129: RuntimeWarning: overflow encountered in exp
+  return 1/(1 + np.exp(-x))
+
+Using my own code:
+Method completed is: Logistic regression
+Number of epochs completed:  1000
+Accuracy score on training set:  0.9867780097425192
+Accuracy score on test set:  0.9388888888888889
+
+
+
+#####################
+Setting up directories for analysis: DONE

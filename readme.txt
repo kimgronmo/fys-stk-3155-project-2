@@ -1,0 +1,1 @@
+main folder contains the python files. Use project2.py to run the code. It needs a data file in the DataFiles folder to run. Selected results can be found in the Results folder. A copy of the project report is also in the main folder.
