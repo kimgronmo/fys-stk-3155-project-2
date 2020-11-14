@@ -26,18 +26,18 @@ Trying the same with Stochastic Gradient Descent:
 
 Method completed is:  OLS  regression
 Number of epochs completed:  10000
-My R2 score is:  0.8887131130175442
+My R2 score is:  0.8889484744431724
 
 Method completed is:  Ridge  regression
 Number of epochs completed:  10000
-My R2 score is:  0.8825795447435163
+My R2 score is:  0.8915277687976652
 
 ##### Printing data to files: #####
 Starting printer to generate data:
 
 Printing and calculating results for a:
 
-R2 score for printer:  0.9336347357474689
+R2 score for printer:  0.9262619623689556
 
 
 
@@ -49,34 +49,34 @@ Training Neural Network for Regression
 
 Chosen activation function is:  sigmoid
 Values calculated for test data:
-The NeuralNetwork MSE score is:  0.0070834610796439105
-The NeuralNetwork R2 score is:  0.9058594617332385
+The NeuralNetwork MSE score is:  0.002978112927581701
+The NeuralNetwork R2 score is:  0.9604203155957997
 
 Values calculated for training data:
-The NeuralNetwork MSE score is:  0.008795952222015936
-The NeuralNetwork R2 score is:  0.8965626005920975
+The NeuralNetwork MSE score is:  0.003525657657790499
+The NeuralNetwork R2 score is:  0.9585394679143876
 
 Training Neural Network for Regression
 
 Chosen activation function is:  RELU
 Values calculated for test data:
-The NeuralNetwork MSE score is:  0.002942375891606443
-The NeuralNetwork R2 score is:  0.9608952675670102
+The NeuralNetwork MSE score is:  0.0007312304053362646
+The NeuralNetwork R2 score is:  0.9902818095304847
 
 Values calculated for training data:
-The NeuralNetwork MSE score is:  0.002097606226895497
-The NeuralNetwork R2 score is:  0.9753328658892868
+The NeuralNetwork MSE score is:  0.0004734704628352753
+The NeuralNetwork R2 score is:  0.9944321487729827
 
 Training Neural Network for Regression
 
 Chosen activation function is:  LeakyRELU
 Values calculated for test data:
-The NeuralNetwork MSE score is:  0.0029847470800230015
-The NeuralNetwork R2 score is:  0.9603321464543665
+The NeuralNetwork MSE score is:  0.0010644310506517823
+The NeuralNetwork R2 score is:  0.985853509897276
 
 Values calculated for training data:
-The NeuralNetwork MSE score is:  0.0019224314569332283
-The NeuralNetwork R2 score is:  0.9773928614633216
+The NeuralNetwork MSE score is:  0.000686792079799876
+The NeuralNetwork R2 score is:  0.9919235592832538
 
 
 
@@ -85,7 +85,7 @@ Starting Project 2: part d
 
 inputs = (n_inputs, pixel_width, pixel_height) = (1797, 8, 8)
 labels = (n_inputs) = (1797,)
-Accuracy score on training set:  0.9909533750869868
+Accuracy score on training set:  1.0
 Accuracy score on test set:  0.9222222222222223
 C:\Users\kimgr\Documents\Python Scripts\project2final\NewNeural.py:37: RuntimeWarning: overflow encountered in exp
   return 1/(1 + np.exp(-x))
@@ -106,14 +106,14 @@ Logistic regression using image data
 Using Scikit-Learn:
 Accuracy of training data:  1.0
 Accuracy of test data:  0.9583333333333334
-C:\Users\kimgr\Documents\Python Scripts\project2final\functions.py:129: RuntimeWarning: overflow encountered in exp
+C:\Users\kimgr\Documents\Python Scripts\project2final\functions.py:137: RuntimeWarning: overflow encountered in exp
   return 1/(1 + np.exp(-x))
 
 Using my own code:
 Method completed is: Logistic regression
 Number of epochs completed:  1000
-Accuracy score on training set:  0.9867780097425192
-Accuracy score on test set:  0.9388888888888889
+Accuracy score on training set:  0.9832985386221295
+Accuracy score on test set:  0.95
 
 
 

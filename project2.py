@@ -130,7 +130,7 @@ if __name__ == '__main__':
     print("Starting Project 2: part b and c")
     print("\n")
 
-    epochs = 10000
+    epochs = 100000
     batch_size = 100
     eta = 0.0001
     lmbd = 0.01
@@ -219,7 +219,7 @@ if __name__ == '__main__':
 
     Y_train_onehot, Y_test_onehot = to_categorical_numpy(Y_train), to_categorical_numpy(Y_test)    
     
-    epochs = 100
+    epochs = 1000
     batch_size = 100
     eta = 0.01
     lmbd = 0.01

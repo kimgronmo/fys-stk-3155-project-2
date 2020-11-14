@@ -80,8 +80,8 @@ class Printerfunctions():
         # code from lecturenotes in FYS-STK4155 to print to heatmap
         eta_vals = np.logspace(-5, 1, 7)
         lmbd_vals = np.logspace(-5, 1, 7)
-        print("eta values ",eta_vals)
-        print("lambda values ",lmbd_vals)
+        #print("eta values ",eta_vals)
+        #print("lambda values ",lmbd_vals)
         # store the models for later use
         DNN_numpy = np.zeros((len(eta_vals), len(lmbd_vals)), dtype=object)
         import NewNeural
@@ -97,10 +97,10 @@ class Printerfunctions():
         
                 test_predict = dnn.predict(X_test)
         
-                print("Learning rate  = ", eta)
-                print("Lambda = ", lmbd)
-                print("Accuracy score on test set: ", accuracy_score(Y_test, test_predict))
-                print()
+                #print("Learning rate  = ", eta)
+                #print("Lambda = ", lmbd)
+                #print("Accuracy score on test set: ", accuracy_score(Y_test, test_predict))
+                #print()
                 
                 
         
