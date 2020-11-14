@@ -77,6 +77,14 @@ def SGD(training_data,y_train,X_test,y_test,epochs,mini_batch_size,eta,beta,meth
     for j in range(epochs):
         #print("Starting epoch: ",j)
         # Should the batches or training data be shuffled??
+        # how to shuffle 2 arrays in the same way??
+        
+        from sklearn.utils import shuffle 
+        training_data,y_train = shuffle(training_data,y_train)
+        # no gives same low R2 score for code in main program
+        # but better R2 in printerfunctions.... why?..
+        
+        
         mini_batches = [training_data[k:k+mini_batch_size]
             for k in range(0,n,mini_batch_size)]
 

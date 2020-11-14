@@ -99,7 +99,7 @@ if __name__ == '__main__':
 
     epochs = 10000
     mini_batch_size = 12 #12
-    eta = 3.0 #1.0 #0.01
+    eta = 0.05 #1.0 #0.01
     
     beta = np.random.randn(X_train[0].size)
 
@@ -111,6 +111,9 @@ if __name__ == '__main__':
     # when I call SGD from here my R2 score for test data is very low (0.89)
     # when I call the same function with same data (random beta) from
     # printerfunctions I get a much betts R2 score (0.93) both using OLS
+    # tried with and without np.seed here and its still the same.
+    # tried same number of epochs here (100) as in printerfunction.
+    # and different batch sizes
 
     functions.SGD(X_train,y_train,X_test,y_test,epochs,mini_batch_size,eta,beta,"OLS",False)
     
@@ -121,6 +124,7 @@ if __name__ == '__main__':
     printer = Printerfunctions.Printerfunctions()
     printer.partA(X_train,y_train,X_test,y_test,epochs,mini_batch_size,eta,beta)
 
+    
     print("\n""\n")
 
     print("Starting Project 2: part b and c")
@@ -267,3 +271,4 @@ if __name__ == '__main__':
     print("Setting up directories for analysis: DONE")
     #import printerfunctions
     #printerfunctions.partA()
+    #"""
